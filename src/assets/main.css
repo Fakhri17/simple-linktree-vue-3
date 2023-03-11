@@ -1,35 +1,26 @@
 /* @import './base.css'; */
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
+.bg-custom {
+  background: rgba(0, 0, 0, .5) url('./pexels-daniel-putzer-633409.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-blend-mode: darken;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+.mobile-view {
+  margin: 0px auto;
+  height: 100%;
+  width: 100%;
+  max-width: 680px;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.img-circle{
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.icon-sosmed-1{
+  font-size: 30px;
 }
