@@ -18,12 +18,13 @@
   export default{
     methods: {
       getUsername() {
-        return this.$store.getters[`auth/${GET_USERNAME}`];
+        return localStorage.getItem("username") === null ? this.$store.getters[`auth/${GET_USERNAME}`] : localStorage.getItem("username");
       },
       resetState() {
         this.$store.commit(`auth/${SET_AUTHENTICATION}`, false);
         this.$store.commit(`auth/${SET_USERNAME}`, "");
-        this.$router.push("/");
+        localStorage.removeItem("username");
+        this.$router.push("/login");
       }
     },
   }

@@ -30,6 +30,7 @@
             <div class="mb-1 text-center w-100 h5">{{ item.name }}</div>
           </a>
         </div>
+        <Footer />
       </div>
       
     </div>
@@ -40,9 +41,11 @@
 <script>
   import {  GET_USERNAME } from "../stores/storeconstants";
   import Header from "../components/Header.vue";
+  import Footer from "../components/Footer.vue";
   export default {
     components: {
       Header,
+      Footer
     },
     methods: {
       getUsername() {
