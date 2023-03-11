@@ -5,18 +5,7 @@
   <div class="bg-custom py-5">
     <div class="container">
       <div class="mobile-view">
-        <div class="bg-light py-3 px-4 w-100 rounded-3 shadow mb-5 align-items-center">
-          <div class="row">
-            <div class="col">
-              <div class="h4 mb-0">Simple Linktree Vue 3</div>
-            </div>
-            <div class="col-auto">
-              <router-link to="/login" class="fw-bold btn-link text-dark fs-5"> Login</router-link>
-            </div>
-          </div>
-         
-          
-        </div>
+        <Header />
         <div class="d-flex flex-column align-items-center">
           <div class="mb-4">
             <img class="rounded-circle img-thumbnail img-circle" alt="avatar1" src="https://fakhri.madeit.cool/assets/image/myphoto.jpg" />
@@ -49,7 +38,17 @@
 </template>
 
 <script>
+  import {  GET_USERNAME } from "../stores/storeconstants";
+  import Header from "../components/Header.vue";
   export default {
+    components: {
+      Header,
+    },
+    methods: {
+      getUsername() {
+        return this.$store.getters[`auth/${GET_USERNAME}`];
+      }
+    },
     setup() {
       const sosmed = [
         {

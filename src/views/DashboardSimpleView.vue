@@ -1,24 +1,25 @@
 <template>
-  <div class="my-5">
+  <div class="bg-custom py-5">
     <div class="container">
-      <h1>Welcome to dashboard</h1>
+      <div class="mobile-view">
+        <Header />
+        <div class="text-white">
+          <h2>Welcome to dashboard menu</h2>
+        </div>
+      </div>
+      
     </div>
-    
   </div>
+  
 </template>
 
 <script>
-  import { GET_USERNAME } from "../stores/storeconstants";
-
+  
+  import Header from "../components/Header.vue";
   export default {
-    data(){
-      
-    },
-    mounted() {
-      if(!this.$store.getters[`auth/${GET_USERNAME}`].length){
-        this.$router.push("/");
-      }
-      
+    components: {
+      Header,
     },
   }
-</script> 
+</script>
+
