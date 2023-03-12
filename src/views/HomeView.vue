@@ -14,7 +14,7 @@
             <h1 class="text-center text-white fs-2">@fakhri17</h1>
           </div>
           <div>
-            <h5 class="text-white">Email: fakhricoffe@gmail.com</h5>
+            <h5 class="text-white">Email: <a href="mailto:fakhricoffe@gmail.com" class="text-white">fakhricoffe@gmail.com</a> </h5>
           </div>
         </div>
         <div class="d-flex justify-content-center my-3">
