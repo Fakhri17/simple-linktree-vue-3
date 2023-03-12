@@ -19,13 +19,13 @@
         </div>
         <div class="d-flex justify-content-center my-3">
           <a v-for="item in sosmed" :key="item" :href="item.link" target="_blank" 
-            class="text-white mx-2">
-            <i :class="`bi bi-${item.icon} icon-sosmed-1`"></i>
+            class="text-white mx-2 animation-icons">
+            <i :class="`bi bi-${item.icon} icon-sosmed-1 animation-icons`"></i>
           </a>
         </div>
         <div class="my-4">
           <a v-for="item in sosmed" :key="item" :href="item.link" target="_blank"
-            class="btn btn-light w-100 rounded-pill shadow d-flex align-items-center mb-3">
+            class="btn btn-light button-sosmed-animations w-100 rounded-pill shadow d-flex align-items-center mb-3">
             <i :class="`bi bi-${item.icon} icon-sosmed-1`"></i>
             <div class="mb-1 text-center w-100 h5">{{ item.name }}</div>
           </a>

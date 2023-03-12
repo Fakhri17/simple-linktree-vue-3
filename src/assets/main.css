@@ -22,5 +22,21 @@
 }
 
 .icon-sosmed-1{
-  font-size: 30px;
+  font-size: 35px;
+}
+
+.animation-icons{
+  transition: 0.5s;
+}
+
+.animation-icons:hover{
+  transform: scale(1.5);
+}
+
+.button-sosmed-animations{
+  transition: 0.5s;
+}
+
+.button-sosmed-animations:hover{
+  transform: scale(1.1);
 }

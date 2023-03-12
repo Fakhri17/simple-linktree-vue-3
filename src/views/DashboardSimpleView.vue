@@ -39,7 +39,7 @@
     },
     data(){
       return{
-        username: localStorage.getItem("username"),
+        username: sessionStorage.getItem("username"),
       }
     },
     setup() {
@@ -92,7 +92,7 @@
       }
     },
     mounted(){
-      if(localStorage.getItem("username") == null){
+      if(sessionStorage.getItem("username") == null){
         this.$router.push("/login");
       }
     }

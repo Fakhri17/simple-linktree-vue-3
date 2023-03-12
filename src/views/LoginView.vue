@@ -51,7 +51,7 @@
         if(this.input.username != "" && this.input.password != ""){
           // this.output = "Authentication complete"
           //stores true to the set_authentication and username to the set_username
-          localStorage.setItem("username", this.input.username); 
+          sessionStorage.setItem("username", this.input.username); 
           this.$store.commit(`auth/${SET_AUTHENTICATION}`, true);
           this.$store.commit(`auth/${SET_USERNAME}`, this.input.username);
           // this.output = "Authentication complete."
